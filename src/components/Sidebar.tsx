@@ -6,12 +6,18 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className="flex flex-col items-center bg-default w-56 h-screen">
+    <aside
+      className="
+      flex flex-col items-center bg-default h-screen shrink-0 w-[224px]
+      max-sm:hidden
+      "
+    >
       <div className="flex justify-center m-2 mb-4">
         <Image src={LogoUnicap} alt="Logo unicap" />
       </div>
+
       <nav className="flex flex-col justify-center items-center space-y-6 mb-80">
-        <Link href="/" className="flex bg-default w-20 h-20  focus:ring focus:ring-white justify-center items-center rounded-md">
+        <Link href="/" className="flex bg-default w-20 h-20 focus:ring focus:ring-white justify-center items-center rounded-md">
           <House className="text-white focus:text-default" size={32} />
 
         </Link>
