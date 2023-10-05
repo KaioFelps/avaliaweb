@@ -18,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col bg-bground h-screen w-screen pl-12 pr-28 pt-36">
+    <>
       <div className="mb-8">
         <Text size="2xl" weight="semibold" fontFamily="sans" color="black">
           Nome do aluno
@@ -27,12 +27,12 @@ export default function Home() {
           {dataFormatada}
         </Text>
       </div>
-      <div >
+
+      <div className="flex flex-col">
         <Card title="Tarefa 1" description="Esta é a descrição da tarefa 1." status="feito" />
         <Card title="Tarefa 2" description="Esta é a descrição da tarefa 2." status="pendente" />
         <Card title="Tarefa 3" description="Esta é a descrição da tarefa 3." status="incompleto" />
       </div>
-
-    </div>
+    </>
   );
 }
