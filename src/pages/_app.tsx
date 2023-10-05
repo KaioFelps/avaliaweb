@@ -1,3 +1,4 @@
+import Sidebar from '@/components/Sidebar';
 import '@/styles/globals.css'
 import { theme } from '@/styles/theme';
 import { ThemeProvider } from '@mui/material';
@@ -11,8 +12,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Sistema de Avaliação • UNICAP </title>
       </Head>
 
-      <Component {...pageProps} />
+      <main className="flex">
+        <Sidebar />
+        <Component {...pageProps} />
+      </main>
     </ThemeProvider>
-
   );
 }
